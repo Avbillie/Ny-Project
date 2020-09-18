@@ -12,38 +12,41 @@
 
 <body class="container-fluid">
     <header class="jumbotron">
-        <h1>New York Times Search</h1>
+        <h1 class="text-center">New York Times Search</h1>
     </header>
 
 
     <main class="card">
         <div class="card-body ">
-            <h5 class="card-title">Search Parameters</h5>
+            <h5 class="card-header">Search Parameters</h5>
             <span>Search Term:</span>
             </br>
             <input class="col-lg-12" type="text" id="Search-Term">
+            </br>
             </br>
             <span>Number of Records to Retrieve:</span>
             </br>
             <input class="col-lg-12" type="number" id="Number-of-Records-to-Retrieve">
             </br>
-            <span>Start Year:</span>
+            </br>
+            <span>Start Year (Optional):</span>
             </br>
             <input class="col-lg-12" type="date" id="Start-Year">
             </br>
-            <span>End Year:</span>
+            </br>
+            <span>End Year (Optional):</span>
             </br>
             <input class="col-lg-12" type="date" id="End-Year">
             </br>
+            </br>
             <button class="search" id="search">Search</button>
             <button class="clear" id="clear">Clear Results</button>
-
         </div>
     </main>
-
+    </br>
     <main class="card">
         <div class="card-body ">
-            <h5 class="card-title">Top Articles</h5>
+            <h5 class="card-header">Top Articles</h5>
             <div id="topArticles"></div>
         </div>
     </main>
