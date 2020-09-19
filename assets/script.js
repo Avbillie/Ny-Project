@@ -17,5 +17,10 @@ $("#search").on("click", function () {
     method: "GET",
   }).then(function (response) {
     console.log(response);
+    for (var i = 0; i < response.response.docs.length; i++) {
+      var pEl = $("<p>");
+      pEl.text(response.response.docs[i].abstract);
+      $("#topArticles").append(pEl);
+    }
   });
 });
